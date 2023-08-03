@@ -1,13 +1,9 @@
-let num1 = 5;
-let num2 = 6;
+const fruits = ['apple', 'oranges' , ' ', 'mango', ' ' , 'lemon'];
 
-const product = (a,b) => a*b;
+console.log(fruits);
+console.log(fruits.map(fruit => {
+    if(fruit === ' ')
+        fruit = 'empty string';
 
-const Student = {
-    studentId: '1',
-    name: 'Sara',
-    language : 'Java'
-}
-
-console.log(Student);
-console.log(product(num1,num2));
+    return fruit;
+}));
